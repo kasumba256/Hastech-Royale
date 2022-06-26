@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/Index.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" 
+    rel="stylesheet" >
+</head>
+<body>
+  <header>
+    <nav>
+        <div class="toggle">
+            <i class="fa fa-bars menu" aria-hidden="true"></i>
+
+        </div>
+        <ul>
+            <li><a href="">HOME</a></li>
+            <li><a href="">ABOUT</a></li>
+            <li><a href="">CONTACT US</a></li>
+
+        </ul>
+    </nav>
+  </header> 
+  
+  
+    <script src="https://code.jquery.com/jquery-3.6.0.js" ></script>
+    <script type="text/javascript">
+       $(document).ready(function()
+       {
+        $('.menu').click(function()
+        {
+            $('ul').toggleClass('active');
+        })
+       })
+    </script>
+    
+</body>
+</html>
