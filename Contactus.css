@@ -1,0 +1,46 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body
+{
+   background: linear-gradient(90deg,#0e3959 0%,#0e3959 30%,#03a9f5 30%,#03a9f5 100% );
+}
+.container
+{
+    position: relative;
+    width: 100%;
+    padding: 40px 100px;
+}
+.container .title
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+.container .title h2
+{
+    color:white;
+    font-weight: 500;
+}
+.form
+{
+    grid-area: form;
+}
+.info
+{
+    grid-area: info;
+}
+.map
+{
+    grid-area: map;
+}
+.box
+{
+    position: relative;
+}

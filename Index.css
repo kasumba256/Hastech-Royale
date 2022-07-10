@@ -8,13 +8,46 @@ header
     width: 100%;
     background-color: aqua;
 }
+.lo
+{
+    margin-top: 10px;
+    max-width: 60px;
+    object-fit: cover;
+    align-items: center;
+    
+   
+}
+#wordlogo
+{
+    margin-left: 100px;
+    justify-content:center ;
+    
+}
+
+
+
 
 ul 
 {
     width: 80%;
     margin: 0 auto;
     
+    
 }
+
+
+.pa
+{
+    
+    float: right;
+    margin-top: -67px;
+}
+.wordlogo
+{
+    margin-left: 150px;
+    
+}
+
 ul li
 {
     list-style: none;
@@ -43,6 +76,9 @@ ul li a
     display: none;
    
 }
+
+
+
 @media (max-width:600px)
 {
     .toggle
