@@ -26,7 +26,10 @@ body
 .container .title h2
 {
     color:white;
+    font-size: 3.5em;
     font-weight: 500;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 .form
 {
@@ -123,4 +126,138 @@ body
     cursor: pointer;
     padding: 14px 15px;
     border-radius: 5px;
+}
+
+/*info*/
+
+.info
+{
+    background: #0e3959;
+   
+}
+.info h3
+{
+    color: #fff;
+    margin-bottom: 10px;
+}
+.info .infoBox div
+{
+    display: flex;
+    align-items: center;
+}
+.info .infoBox div span
+{
+    min-width: 40px;
+    height: 40px;
+    color: #fff;
+    background: #18b7ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    border-radius: 50%;
+    margin-right: 15px;
+    margin-bottom: 10px;
+}
+.info .infoBox div p
+{
+    color: #fff;
+    font-size: 1.1em;
+}
+.info .infoBox div a
+{
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1em;
+
+}
+.sci
+{
+    margin-top: 40px;
+    display: flex;
+
+}
+.sci li
+{
+    list-style: none;
+    margin-right: 15px;
+}
+.sci li a
+{
+    color: #fff;
+    font-size: 2em;
+    color: #ccc;
+
+}
+.sci li a:hover
+{
+    color: #fff;
+}
+.map
+{
+    padding: 0;
+}
+.map iframe
+{
+    width: 100%;
+    height: 100%;
+}
+/*Responsive design*/
+@media(max-width:600px)
+{
+    body
+    {
+        background: #03a9f5;
+    
+    }
+    .container
+    {
+        padding: 20px;
+    }
+    .box
+    {
+        position: relative;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "form"
+        "info"
+        "map"
+        ;
+
+    }
+    
+    .formBox .row50
+    {
+        display: flex;
+        gap: 0;
+        flex-direction: column;
+    }
+    .inputBox
+    {
+        width: 100%;
+
+    }
+    .contact
+    {
+        padding: 30px;
+    }
+    .info .infoBox div span
+    {
+        margin-bottom: 20px;
+    }
+    .sci
+{
+    
+    display: flex;
+    justify-content: center;
+
+
+}
+    .map
+    {
+        min-height: 300px;
+        padding: 0;
+    }
 }

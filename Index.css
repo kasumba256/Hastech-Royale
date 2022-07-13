@@ -3,100 +3,103 @@
     margin: 0;
     padding: 0;
 }
-header
+
+.imz
 {
-    width: 100%;
-    background-color: aqua;
+  height: 65px;
 }
-.lo
+.navbar
 {
-    margin-top: 10px;
-    max-width: 60px;
-    object-fit: cover;
+    display: flex;
+    flex-wrap: wrap;
     align-items: center;
-    
-   
+    justify-content: space-between;
+    padding: 15px 50px; 
 }
-#wordlogo
-{
-    margin-left: 100px;
-    justify-content:center ;
-    
-}
-
-
-
-
-ul 
-{
-    width: 80%;
-    margin: 0 auto;
-    
-    
-}
-
-
-.pa
-{
-    
-    float: right;
-    margin-top: -67px;
-}
-.wordlogo
-{
-    margin-left: 150px;
-    
-}
-
-ul li
-{
-    list-style: none;
-    display: inline-block;
-    padding: 20px;
-
-}
-
-ul li:hover
-{
-    background: white;
-}
-ul li a
+.navbar a
 {
     text-decoration: none;
+    color: inherit;
+    font-weight: 500;
+    font-size: 2em;
 }
-.toggle
+.Logo
 {
-    width: 100%;
-    padding: 10px 20px;
-    background-color: blanchedalmond;
-    text-align: right;
-    box-sizing: border-box;
-    color: brown;
-    font-size: 40px;
+    margin-right: 50px;
+    font-size: 1.5em;
+}
+.list
+{
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+#toggler, .navbar label
+{
     display: none;
-   
+}
+.Gallery 
+{
+    width: 85vw;
+    height: 100vmin;
+    display: flex;
+    gap: 5px;
+
+}
+.Gallery img
+{
+    height: 100%;
+    flex: 1;
+    object-fit: cover;
+    overflow: hidden;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: all 0.3s;
+}
+.Gallery img:hover
+{
+    flex: 4;
 }
 
-
-
-@media (max-width:600px)
+/*Respo*/
+@media screen and (max-width:600px)
 {
-    .toggle
-    {
-        display: block;
-    }
-    ul
+    .menu
     {
         width: 100%;
-        display: none;
+        max-height: 0;
+        overflow: hidden;
     }
-    ul li
+    .list
     {
-        display: block;
-        text-align: center;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+
     }
-    .active
+    .list li
     {
-        display: block;
+        float: right;
+    }
+    .navbar label
+    {
+        display:inline-flex ;
+        align-items: center;
+        cursor: pointer;
+    }
+    #toggler:checked ~ .menu
+    {
+        max-height: 100%;
+    }
+    #Toggler
+    {
+        font-size: 65px;
+    }
+    .Gallery
+    {
+        display: flex;
+        justify-content: center;
+        margin: auto;
+        flex-direction: column;
     }
 }
