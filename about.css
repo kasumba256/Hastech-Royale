@@ -17,6 +17,7 @@ body
 }
 .navbar
 {
+    
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -24,6 +25,7 @@ body
     padding: 15px 50px; 
     background: #0e3959;
     margin-bottom: 15px;
+    
 }
 .navbar a
 {
@@ -38,11 +40,16 @@ body
     margin-right: 50px;
     font-size: 1.5em;
 }
+
 .list
 {
     list-style: none;
     display: flex;
     gap: 25px;
+}
+.list a 
+{
+    letter-spacing: 4px;
 }
 #toggler, .navbar label
 {
@@ -56,12 +63,39 @@ section
     margin-bottom: 15px;
    
 }
-.slide0
+.main-slide
 {
     position: relative;
     width: 100%;
+    margin: 0 auto;
   
 }
+.main-slide img 
+{
+    vertical-align: middle;
+    width: 98%;
+    height: auto;
+ 
+}
+.main-slide .content 
+{
+    position: relative;
+    top: -216px;
+    bottom: 0;
+    left: 15px;
+    background: rgb(0, 0, 0); /* Fallback color */
+    background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+    color: #f1f1f1;
+    width: 98%;
+    padding: 60px;
+    box-sizing: border-box;    
+}
+.main-slide .content p
+{
+  text-align: center;
+  margin-left: 100px;
+}
+
 .vie--0
 {
     width: 100%;
@@ -75,20 +109,24 @@ section
     position: relative;
     max-width: 800px;
     margin: 0 auto;
+    margin-bottom: 10px;
 }
 .slide1 img 
 {
     vertical-align: middle;
+    
 }
 .slide1 .content 
   {
     position: absolute;
     bottom: 0;
+    
     background: rgb(0, 0, 0); /* Fallback color */
     background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
     color: #f1f1f1;
-    width: 90%;
+    width: 93%;
     padding: 20px;
+    
   }
 footer
 {
@@ -130,6 +168,11 @@ h2
     letter-spacing: 2px;
     
 }
+p
+{
+    text-align: center;
+    letter-spacing: 1px;
+}
 .caption
 {
     max-width: 230px;
@@ -148,6 +191,8 @@ h2
 {
     flex-grow: 2.5s;
 }
+
+
 /*Respo*/
 @media screen and (max-width:600px)
 {

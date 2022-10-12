@@ -12,6 +12,48 @@ body
    flex-direction: column;
    min-height: 100vh;
 }
+.imz
+{
+  height: 65px;
+}
+.navbar
+{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 50px; 
+    background: #0e3959;
+    margin-top: -40px;
+}
+.navbar a
+{
+    text-decoration: none;
+    color: inherit;
+    font-weight: 500;
+    font-size: 2em;
+    color: white;
+}
+.Logo
+{
+    margin-right: 50px;
+    font-size: 1.5em;
+}
+.list
+{
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+.list a 
+{
+    letter-spacing: 4px;
+}
+#toggler, .navbar label
+{
+    display: none;
+}
+
 .container
 {
     position: relative;
