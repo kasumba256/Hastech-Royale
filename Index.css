@@ -27,6 +27,7 @@ body
 {
     text-decoration: none;
     color: inherit;
+    font-family: 'Roboto', sans-serif;
     font-weight: 500;
     font-size: 2em;
     color: white;
@@ -57,10 +58,7 @@ body
     height: 80vmin;
     display: flex;
     align-items: center;
-    gap: 5px;
-    
-   
-
+    gap: 5px 
 }
 .Gallery img
 {
@@ -90,6 +88,7 @@ body
 button
 {
     text-align: center;
+
     font-size: 20px;
     font-weight: 500;
     width: 160px;
@@ -128,6 +127,7 @@ footer
         flex-direction: column;
         align-items: center;
         padding: 20px;
+        
 
     }
     .list li
@@ -150,11 +150,42 @@ footer
     }
     .Gallery
     {
+        
         display: flex;
         justify-content: center;
         margin: auto;
         flex-direction: column;
+        
     }
+    
+    button
+    {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 300;
+    width: 120px;
+    height: 50px;
+    margin-top: 270px;
+    margin-left: -200px;
+    border-radius: 4px;
+    
+    
+    
+    }
+    footer
+    {
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 50px;
+        position: fixed;
+        color: white;
+        margin: auto    ;
+        text-align: center;
+        font-size: small;
+
+    }
+    /*
     footer
     {
         position: relative;
@@ -171,5 +202,5 @@ footer
         text-align: center;
         align-items: center;
        
-    }
+    }*/
 }
