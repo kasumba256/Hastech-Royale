@@ -25,7 +25,7 @@ body
     justify-content: space-between;
     padding: 15px 50px; 
     background: #0e3959;
-    margin-bottom: 15px;
+    /*margin-bottom: 15px;*/
     
 }
 .navbar a
@@ -71,6 +71,31 @@ section
     margin: 0 auto;
   
 }
+.chk img
+{
+    width: 100%;
+    display: block;
+}
+.chk figcaption
+{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: white;
+    padding: 20px;
+    
+    
+    font-family: 'Roboto', sans-serif;
+    background: rgba(0, 0, 0, 0.5);
+
+}
+.chk figcaption h2
+{
+    line-height: 40px;
+    font-weight: bold;
+}
+
+/*
 .main-slide img 
 {
     vertical-align: middle;
@@ -79,6 +104,7 @@ section
     
  
 }
+*/
 .main-slide .content 
 {
     position: relative;
@@ -212,18 +238,42 @@ p
         font-weight: 100;
         font-family: 'Roboto', sans-serif;
     }
-    .main-slide
+    .chk
     {
-        border: 1px solid brown;
-        height: 300px;
-        padding: 0; 
+        position: relative;
     }
-    .vie--0
-    {
-       object-fit: cover;
-       max-width: 100%;
-       margin-left:  -9px;        
-    }
+    .chk img
+   {
+    width: 100%;
+    display: block;
+  
+   } 
+   .chk figcaption
+   {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: white;
+    font-size: 8px;
+    font-family: 'Roboto', sans-serif;
+    background: rgba(0, 0, 0, 0.5);
+    box-sizing: border-box;
+
+}
+.chk figcaption h2
+{
+  
+    font-size: 15px;
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+   
     
     
     
@@ -231,27 +281,7 @@ p
    
     
 
-    .content
-    {
-        
-      height: 20px;
-      width: 60%;
-      margin-top: 80px;
-      margin-left:  -15px;
-     
-
-    }
-    
-    .content h2
-    {
-        font-size: 15px;
-        margin-top: -50px;
-        margin-left: -40px;
-    }
-    .content p
-    {
-        font-size: 9px;
-    }
+   
     img 
     {
         max-width: 100%;
