@@ -40,11 +40,17 @@
  <button class="Butt" type="button" onclick="">BOOK NOW</button>
 </a>
  <footer>
-  <p>© 2023 HASTECHROYALE HOTEL ALL RIGHTS RESERVED</p>
+  <p> &copy;
+    2023 HASTECHROYALE HOTEL ALL RIGHTS RESERVED
+    <span id="year "></span>
+  </p>
 </footer>
  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-    
+  <script>
+    const year = document.getElementById("year");
+    year.textContent = new Date().getFullYear();
+  </script>  
 </body>
 
 </html>
