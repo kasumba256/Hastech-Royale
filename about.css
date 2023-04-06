@@ -61,7 +61,7 @@ section
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-bottom: 15px;
+    margin-bottom: 5px;
    
 }
 .main-slide
@@ -78,85 +78,105 @@ section
 }
 .chk figcaption
 {
-    position: absolute;
+    position: sticky;
     bottom: 0;
     left: 0;
     color: white;
     padding: 20px;
-    
-    
     font-family: 'Roboto', sans-serif;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 20);
 
 }
+figcaption
+
 .chk figcaption h2
 {
     line-height: 40px;
     font-weight: bold;
 }
-
-/*
-.main-slide img 
+.container 
 {
-    vertical-align: middle;
-    width: 98%;
-    height: auto;
-    
- 
+    width: 100%; 
 }
-*/
-.main-slide .content 
+.row-1
 {
-    position: relative;
-    top: -216px;
-    bottom: 0;
-    left: 15px;
-    background: rgb(0, 0, 0); /* Fallback color */
-    background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
-    color: #f1f1f1;
-    width: 98%;
-    padding: 60px;
-    box-sizing: border-box;    
-    
+   
+    width: 100%;
+    height: 500px;
+    display: flex;
+    column-gap: 1px;
+    margin-top: -10px;
 }
-.main-slide .content p
+.box-1
 {
-  text-align: center;
-  margin-left: 100px;
+    /*border: 3px solid skyblue;*/
+    height: 450px;
+    width: 50%;
+    padding: 10px;
 }
-
-.vie--0
+.box-1 img
 {
     width: 100%;
-    height: auto;
-    margin: 5px 15px 15px 15px;
-   
-   
+    height: 90%;
 }
-.slide1
+.fig-1
 {
-    position: relative;
-    max-width: 800px;
-    margin: 0 auto;
-    margin-bottom: 10px;
+    background: black;
+    color: white;
+    
 }
-.slide1 img 
+.fig-1, h2
 {
-    vertical-align: middle;
+    text-align: center;
+}
+.fig-1, p
+{
+    text-align: center;
+}
+
+.box-2
+{
+    /*border: 3px solid skyblue;*/
+    height: 450px;
+    width: 50%;
+    padding: 10px;
     
 }
-.slide1 .content 
-  {
-    position: absolute;
-    bottom: 0;
-    
-    background: rgb(0, 0, 0); /* Fallback color */
-    background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
-    color: #f1f1f1;
-    width: 93%;
-    padding: 20px;
-    
-  }
+.box-2 img
+{
+    width: 100%;
+    height: 90%;
+}
+.fig-2
+{
+    background: black;
+    color: white;
+    text-align: center;
+}
+.row-2
+{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    column-gap: 2px;
+    margin-top: -40px; 
+}
+.row-3
+{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    column-gap: 2px;
+    margin-top: -40px; 
+}
+.row-4
+{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    column-gap: 2px;
+    margin-top: -40px; 
+}
 footer
 {
     margin-top: auto;
@@ -166,149 +186,53 @@ footer
     align-items: center;
     justify-content: center;
     height: 80px;
+    margin-top: -38px; 
 }
 
-.gallery
-{
-    width: 1700px;
-    height: 400px;
-    background: #ccc;
-    margin: 120px auto;
-    display: flex;
-   
-}
-.col
-{
-    flex: 1;
-    color: #fff;
-    height: 100%;
-    padding: 25px;
-    box-sizing: border-box;
-    border: 1px solid black;
-    position: relative;
-    transition: 0.6s;
-}
-h2
-{
-    font-size: 22px;
-    font-weight: 500;
-    text-align: center;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    
-}
-p
-{
-    text-align: center;
-    letter-spacing: 1px;
-}
-.caption
-{
-    max-width: 230px;
-    font-size: 18px;
-    margin: 28px 0;
-   
-}
-.col img
-{
-    width: 200px; 
-    position: absolute;
-    right: 0;
-    bottom: 0;
-}
-.col:hover
-{
-    flex-grow: 2.5s;
-}
+
+
+
+
+
+
 @media screen and (max-width: 480px)
-{
-    .menu
+{   
+   
+    .row-1
+    {
+        display: flex;
+        flex-wrap: wrap;
+        height: auto;
+    }
+    .box-1
     {
         width: 100%;
-        max-height: 0;
-        overflow: hidden;
     }
-    .list
+    .fig-1
     {
-        flex-direction: column;
-        align-items: center;
         padding: 10px;
-        line-height: 0.4;
-        font-size: medium;
-        font-weight: 100;
-        font-family: 'Roboto', sans-serif;
     }
-    .chk
+    .fig-1, h2
     {
-        position: relative;
+       font-size: 18px;
     }
-    .chk img
-   {
-    width: 100%;
-    display: block;
-  
-   } 
-   .chk figcaption
-   {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    color: white;
-    font-size: 8px;
-    font-family: 'Roboto', sans-serif;
-    background: rgba(0, 0, 0, 0.5);
-    box-sizing: border-box;
+    .box-2
+    {
+        width: 100%;
+    }
+    .fig-2
+    {
+        padding: 10px;
+    }
+    .fig-2, h2
+    {
+       font-size: 18px;
+    }
+
+
 
 }
-.chk figcaption h2
-{
-  
-    font-size: 15px;
-    font-weight: bold;
-}
 
-
-
-
-
-
-
-   
-    
-    
-    
-    
-   
-    
-
-   
-    img 
-    {
-        max-width: 100%;
-        max-height: 80%;
-        
-    }
-    .slide1
-    {
-        position: relative;
-    max-width: 800px;
-    margin: 0 auto;
-    margin-bottom: 10px;
-    }
-    .slide1 .content 
-  {
-    position: absolute;
-    bottom: 0;
-    
-    background: rgb(0, 0, 0); /* Fallback color */
-    background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
-    color: #f1f1f1;
-    width: 93%;
-    padding: 20px;
-    
-  }
-    
-}
 
 
 /*Respo*/
