@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact us </title>
-    <link rel="stylesheet" href="/Contactus.css">
+    <link rel="stylesheet" href="./Contactus.css">
 </head>
 <body>
     <div class="container">
@@ -32,22 +32,22 @@
                   <div class="row50">
                     <div class="inputBox">
                         <span>First Name</span>
-                        <input type="text" placeholder="" required >
+                        <input type="text" placeholder="" minlength="3" maxlength="40" required >
                     </div>
                     <div class="inputBox">
                         <span>First Last</span>
-                        <input type="text" placeholder="" required>
+                        <input type="text" placeholder=""  minlength="3"  maxlenght="40" required>
                     </div>
                   </div>
                    <!--2-->
                   <div class="row50">
                     <div class="inputBox">
                         <span>Email</span>
-                        <input type="email" placeholder="" required>
+                        <input type="email" placeholder=""  minlenght="3" maxlenght="40" required>
                     </div>
                     <div class="inputBox">
                         <span>Mobile</span>
-                        <input type="tel" placeholder="" required>
+                        <input type="tel" placeholder="" required  pattern="[0-9]{3}">
                     </div>
                   </div>
 
@@ -109,5 +109,9 @@
     <footer>
       <p>© 2022 HASTECHROYALE HOTEL ALL RIGHTS RESERVED</p>
     </footer>
+    <script>
+      const year = document.getElementById("year");
+      year.textContent = new Date().getFullYear();
+    </script>  
 </body>
 </html>

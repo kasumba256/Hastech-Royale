@@ -25,6 +25,9 @@ body
     padding: 15px 50px; 
     background: #0e3959;
     margin-top: -40px;
+    border: 1px solid red;
+    
+    
 }
 .navbar a
 {
@@ -53,7 +56,6 @@ body
 {
     display: none;
 }
-
 .container
 {
     position: relative;
@@ -103,7 +105,8 @@ body
     "form info"
     "form map";
     grid-gap: 20px;
-    ;
+    border: 1px solid red;
+
 
 }
 .contact h3
@@ -258,12 +261,125 @@ footer
     height: 80px;
 }
 /*Responsive design*/
+
+@media screen and (max-width: 480px)
+{
+
+    .imz
+    {
+        height: 60px;
+        margin-top: 10px;
+    }
+    .menu
+    {
+        width: 100%;
+        max-height: 0;
+        overflow: hidden;
+    }
+    .list
+    {
+        
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+        line-height: 0.4;
+        font-size: medium;
+        font-weight: 100;
+        font-family: 'Roboto', sans-serif;
+    }
+    .list li
+    {
+        margin-left: 38px;
+
+    }
+    .navbar
+    {
+        margin-bottom: 10px;
+        width: 100%;
+    }
+    .navbar label
+    {
+        display:inline-flex ;
+        align-items: center;
+        cursor: pointer;
+    }
+    #toggler:checked ~ .menu
+    {
+        max-height: 100%;
+    }
+    #Toggler
+    {
+        font-size: 40px;
+        color: white;
+    }
+    .info h3
+    {
+        font-size: 50px;
+        text-align: center;
+        letter-spacing: 6px;
+    }
+    .infoBox
+    {
+        margin-top: 50px;
+    }
+    .info .infoBox div span
+   {
+    min-width: 40px;
+    height: 40px;
+    color: #fff;
+    background: #18b7ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    border-radius: 50%;
+    margin-right: 15px;
+    margin-bottom: 10px;
+    margin-left: 30px;
+   }
+   .info .infoBox div p
+   {
+    color: #fff;
+    font-size: 1.4em;
+    margin-top: -12px;
+   }
+}
+
 @media(max-width:600px)
 {
     body
     {
         background: #03a9f5;
+        
+    }
+    .navbar
+   {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 20px; 
+    background: #0e3959;
+    margin-top: -40px;
+    border: 1px solid red;
     
+   }  
+    .imz
+    {
+        height: 60px;
+        margin-top: 10px;
+    }
+    .list
+    {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    margin-left: 150px;
+    margin-top: -50px;
+    }
+    .list a 
+    {
+    letter-spacing: 4px;
     }
     .container
     {
@@ -282,7 +398,7 @@ footer
         ;
 
     }
-    
+
     .formBox .row50
     {
         display: flex;
@@ -302,17 +418,79 @@ footer
     {
         margin-bottom: 20px;
     }
+    .info h3
+    {
+        font-size: 50px;
+        text-align: center;
+        letter-spacing: 6px;
+    }
+    .infoBox
+    {
+        margin-top: 50px;
+    }
+    .info .infoBox div span
+   {
+    min-width: 40px;
+    height: 40px;
+    color: #fff;
+    background: #18b7ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    border-radius: 50%;
+    margin-right: 15px;
+    margin-bottom: 10px;
+    margin-left: 30px;
+   }
+   .info .infoBox div p
+   {
+    color: #fff;
+    font-size: 1.4em;
+    margin-top: -12px;
+   }
     .sci
-{
+   {
     
     display: flex;
     justify-content: center;
 
-
-}
+   }
     .map
     {
         min-height: 300px;
         padding: 0;
+    }
+}
+@media(max-width:769px)
+{
+    .navbar
+    {
+     display: flex;
+     flex-wrap: wrap;
+     align-items: center;
+     justify-content: space-between;
+     padding: 15px 20px; 
+     background: #0e3959;
+     margin-top: -40px;
+     border: 1px solid red;
+     
+    } 
+    .imz
+    {
+        height: 60px;
+        margin-top: 10px;
+    }
+    .list
+    {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    margin-left: 150px;
+    margin-top: -50px;
+    }
+    .list a 
+    {
+    letter-spacing: 4px;
     }
 }
